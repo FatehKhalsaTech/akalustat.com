@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import abductionIllustration from "../images/abduction-illustration.svg";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import abductionIllustration from "../images/abduction-illustration.svg"
 
 function NotFoundPage() {
   return (
@@ -19,7 +19,7 @@ function NotFoundPage() {
         </h2>
       </div>
     </Layout>
-  );
+  )
 }
 
-export default NotFoundPage;
+export default NotFoundPage

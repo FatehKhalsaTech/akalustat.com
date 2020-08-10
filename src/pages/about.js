@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import dogIllustration from "../images/dog-illustration.svg"
 
 function AboutPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[ `gatsby`, `tailwind`, `react`, `tailwindcss` ]}
         title="About"
       />
 
@@ -32,7 +32,7 @@ function AboutPage() {
         </figure>
       </section>
     </Layout>
-  );
+  )
 }
 
-export default AboutPage;
+export default AboutPage

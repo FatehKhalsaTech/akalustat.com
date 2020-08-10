@@ -1,15 +1,15 @@
-import React from "react";
+import React from "react"
+import {graphql} from 'gatsby'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import catAndHumanIllustration from "../images/cat-and-human-illustration.svg"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
-
-function IndexPage() {
+function IndexPage( {data} ) {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
+        keywords={[ `AkalUstat`, `akalustat`, `dasam bani`, `dasam granth` ]}
+        title="AkalUstat"
       />
 
       <section className="text-center">
@@ -23,8 +23,7 @@ function IndexPage() {
           Hey there! Welcome to your first Gatsby site.
         </h2>
 
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
+        <p className="leading-loose"> This is a barebones starter for Gatsby styled using{` `}
           <a
             className="font-bold text-gray-900 no-underline"
             href="https://tailwindcss.com/"
@@ -37,7 +36,44 @@ function IndexPage() {
         </p>
       </section>
     </Layout>
-  );
+  )
 }
 
-export default IndexPage;
+export default IndexPage
+export const query =     graphql`
+    query AkalUstat {
+  banidb {
+    bani(id: "29") {
+      verses {
+        verse {
+          verse {
+            gurmukhi
+          }
+          verseId
+          visraam {
+            sttm {
+              p
+              t
+            }
+          }
+          translation {
+            en {
+              bdb
+            }
+            pu {
+              bdb {
+                gurmukhi
+              }
+            }
+          }
+          transliteration {
+            en
+          }
+        }
+      }
+    }
+  }
+}
+
+`
+

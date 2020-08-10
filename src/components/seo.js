@@ -1,10 +1,10 @@
-import { useStaticQuery, graphql } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
-import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import { Helmet } from "react-helmet"
 
-function SEO({ description, lang, meta, keywords, title }) {
-  const { site } = useStaticQuery(graphql`
+function SEO( { description, lang, meta, keywords, title } ) {
+  const { site } = useStaticQuery( graphql`
     query DefaultSEOQuery {
       site {
         siteMetadata {
@@ -14,9 +14,9 @@ function SEO({ description, lang, meta, keywords, title }) {
         }
       }
     }
-  `);
+  ` )
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
@@ -61,29 +61,29 @@ function SEO({ description, lang, meta, keywords, title }) {
           keywords.length > 0
             ? {
                 name: `keywords`,
-                content: keywords.join(`, `),
+                content: keywords.join( `, ` ),
               }
             : []
         )
-        .concat(meta)}
+        .concat( meta )}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
     />
-  );
+  )
 }
 
 SEO.defaultProps = {
   lang: `en`,
   keywords: [],
   meta: [],
-};
+}
 
 SEO.propTypes = {
   description: PropTypes.string,
-  keywords: PropTypes.arrayOf(PropTypes.string),
+  keywords: PropTypes.arrayOf( PropTypes.string ),
   lang: PropTypes.string,
   meta: PropTypes.array,
   title: PropTypes.string.isRequired,
-};
+}
 
-export default SEO;
+export default SEO

@@ -3,3 +3,18 @@
 @tailwind components;
 /*! purgecss end ignore */
 @tailwind utilities;
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../assets/fonts/DancingScript-VariableFont_wght.ttf');
+}
+@font-face {
+   font-family: 'OpenGurbaniAkhar';
+   font-weight: 'normal';
+   src: url('../assets/fonts/OpenGurbaniAkhar-Regular.woff2');
+}
+@font-face {
+   font-family: 'OpenGurbaniAkhar';
+   font-weight: 'bold';
+   src: url('../assets/fonts/OpenGurbaniAkhar-Bold.woff2');
+}
