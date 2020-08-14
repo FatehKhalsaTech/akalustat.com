@@ -8,7 +8,7 @@ const RomanText = () => {
   const [ line ] = useLine()
 
   return (
-    <div>{line}</div>
+    <span className="font-sm">{line}</span>
   )
 }
 
@@ -23,9 +23,9 @@ const VishraamText: React.FC<VishraamsProps> = ( {vishraams, source, lineID, cla
   const [ line ] = useLine()
   return (
     <div className={className}>
-      {mapVishraams( line, vishraams, source ).map( ( {data, type}, index ) => {
+      {mapVishraams( line, vishraams, source ).map( ( {data, type}, index ) => 
         <span key={`${lineID}-${index}`} className={`pangtee-${type}`}>{data}</span>
-      } )}
+       )}
       </div>
   )
 }
