@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "akalustat.com",
+  "description": "read AkalUstat Bani",
+  "version": "0.0.1",
   "dependencies": {
     "gatsby": "2.24.26",
     "gatsby-plugin-manifest": "2.4.21",
