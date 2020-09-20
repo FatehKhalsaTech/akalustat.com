@@ -40,10 +40,10 @@ function Header() {
               route: `/`,
               title: `Read`,
             },
-            {
-              route: `/history`,
-              title: `History`,
-            },
+          //  {
+            //  route: `/history`,
+             // title: `History`,
+            // },
           ].map( ( link ) => (
             <Link
               className="block mt-4 text-fatehYellow no-underline md:inline-block md:mt-0 md:ml-6"
