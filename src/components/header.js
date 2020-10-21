@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby"
-import React, { useState } from "react"
+import React from "react"
 
 function Header() {
-  const [ isExpanded ] = useState( false )
   const { site } = useStaticQuery( graphql`
     query SiteTitleQuery {
       site {
@@ -19,7 +18,7 @@ function Header() {
         <Link to="/">
           <h1 className="flex font-appPrimary items-center text-fatehYellow no-underline">
             <span className="text-2xl tracking-tight">
-              {site.siteMetadata.title}
+              {site.siteMetadata.title} 
             </span>
           </h1>
         </Link>
@@ -31,10 +30,7 @@ function Header() {
           </div>
 
         <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
-        >
+          className={`md:block md:flex md:items-center w-full md:w-auto`} >
           {[
             {
               route: `/`,

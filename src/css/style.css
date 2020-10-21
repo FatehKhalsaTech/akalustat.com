@@ -18,3 +18,9 @@
    font-weight: 'bold';
    src: url('../assets/fonts/OpenGurbaniAkhar-Bold.woff2');
 }
+.pangtee-v{
+   color: theme('colors.akaliBlue')
+}
+.pangtee-y{
+   color: theme('colors.fatehYellow')
+}
