@@ -1,16 +1,17 @@
-import React from "react"
 import {graphql} from 'gatsby'
+import React from 'react'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {LineBlock} from "../components/lineblock"
 import {Viewer} from "../components/viewer"
 
-function IndexPage( {data} ) {
+const IndexPage = ( {data} ) => {
   const { banidb: { bani: { verses } } } = data
   return (
     <Layout>
       <SEO
-        keywords={[ `AkalUstat`, `akalustat`, `dasam bani`, `dasam granth` ]}
+        keywords={[ `AkalUstat`, `akalustat`, `dasam bani`, `dasam granth`, 'sri dasam granth sahib', 'dasam sri guru granth sahib' ]}
+        description="Sri Akal Ustat bani from Sri Dasam Guru Granth Sahib"
         title="AkalUstat"
       />
 

@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `akalustat.com`,
     description: `Read the bani Akal Ustat`,
-    author: `@akalustat`,
+    author: `@FatehKhalsaTech`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -42,7 +42,6 @@ module.exports = {
         fieldName: "banidb",
         url: "https://api.banidb.com/v2/graphql"
       }
-    },
-    `gatsby-plugin-preact`
+    }
   ],
 }
