@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next start && next export"
+    "export": "next export"
   },
   "dependencies": {
     "next": "12.1.6",
