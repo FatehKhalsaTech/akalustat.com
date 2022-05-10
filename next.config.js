@@ -9,4 +9,4 @@ const nextConfig = {
   assetPrefix: isProd ? "/akalustat.com/" : "",
 }
 
-module.exports = withPlugins([ [optimizedImages, {} ]], nextConfig)
+module.exports = withPlugins([ [optimizedImages, {} ] ], nextConfig)
