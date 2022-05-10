@@ -14,3 +14,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "OpenGurbaniAkhar";
+  src: url("/fonts/OpenGurbaniAkhar/OpenGurbaniAkhar-Regular.otf");
+  font-weight: normal;
+}
+@font-face { 
+  font-family: "OpenGurbaniAkhar";
+  src: url("/fonts/OpenGurbaniAkhar/OpenGurbaniAkhar-Bold.otf");
+  font-weight: bold;
+}
+@font-face { 
+  font-family: "OpenGurbaniAkhar";
+  src: url("/fonts/OpenGurbaniAkhar/OpenGurbaniAkhar-Black.otf");
+  font-weight: black;
+}
