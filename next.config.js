@@ -6,7 +6,8 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: isProd ? "/akalustat.com/" : "",
+  // assetPrefix: isProd ? "/akalustat.com/" : "",
+  // basePath: "",
 }
 
 module.exports = withPlugins([ [optimizedImages, {} ] ], nextConfig)
