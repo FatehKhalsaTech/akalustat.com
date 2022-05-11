@@ -1,5 +1,7 @@
 html,
 body {
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -28,5 +30,45 @@ a {
 @font-face { 
   font-family: "OpenGurbaniAkhar";
   src: url("/fonts/OpenGurbaniAkhar/OpenGurbaniAkhar-Black.otf");
-  font-weight: black;
+  font-weight: 900;
+}
+@font-face { 
+  font-family: "Prabhki";
+  src: url("/fonts/Prabhki/PrabhkiTrue.ttf");
+  font-weight: normal;
+}
+@font-face { 
+  font-family: "Raaj";
+  src: url("/fonts/Raaj/raaj___1.ttf");
+  font-weight: 100;
+}
+@font-face { 
+  font-family: "Raaj";
+  src: url("/fonts/Raaj/raaj___3.ttf");
+  font-weight: 300;
+}
+@font-face { 
+  font-family: "Raaj";
+  src: url("/fonts/Raaj/raaj___5.ttf");
+  font-weight: 500;
+}
+@font-face { 
+  font-family: "Raaj";
+  src: url("/fonts/Raaj/raaj___7.ttf");
+  font-weight: bold;
+}
+@font-face { 
+  font-family: "Raaj";
+  src: url("/fonts/Raaj/raaj___9.ttf");
+  font-weight: 900;
+}
+@font-face { 
+  font-family: "RaajScript";
+  src: url("/fonts/Raaj/raaj__s2.ttf");
+  font-weight: thin;
+}
+@font-face { 
+  font-family: "RaajScript";
+  src: url("/fonts/Raaj/raaj__s5.ttf");
+  font-weight: normal;
 }
