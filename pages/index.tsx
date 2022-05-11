@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 import {Text, PunjabiCaligraphy, Punjabi} from '../app/components/Text'
 import {TextStyle} from '../app/components/Styles'
+import {CHHAND_TITLES} from '../app/constants/chhand-splits'
 
 const Home: NextPage = () => {
   return (
@@ -37,7 +38,24 @@ const Home: NextPage = () => {
             </TextStyle>
           </PunjabiCaligraphy>
         </div>
-        <div className={styles.index_tables}>
+          <Punjabi>
+            <TextStyle classNames={["text_center"]} >
+            <Text style={styles} styleClassNames={["subtitle"]}>
+              {"qqkrw"}
+            </Text>
+            </TextStyle>
+          </Punjabi>
+        <div className={styles.index_table}>
+        {CHHAND_TITLES.map((title,indx) => (
+          <div className={styles.index_item} key={indx}>
+            <Punjabi>
+              <Text>
+                {`${indx + 1}) ${title}`}
+              </Text>
+            </Punjabi>
+          </div>
+        ) )}
+       
         </div>
       </div>
     </div>

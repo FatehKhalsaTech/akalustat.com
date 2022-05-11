@@ -7,10 +7,11 @@ import { UtilStyle, TextStyle } from './Styles'
 
 type TextProps = {
   children: ReactNode
-  style: Styles,
-  styleClassNames: string [],
+  style?: Styles,
+  styleClassNames?: string [],
 }
 export const Text = ({children, style, styleClassNames}: TextProps) => (
+  //@ts-ignore
   <div className={classes(style, styleClassNames)}>
   {children}
   </div>

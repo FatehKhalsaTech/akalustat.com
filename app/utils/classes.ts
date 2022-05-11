@@ -9,4 +9,4 @@ import {Styles} from './types'
 //   return test
 // }
 
-export const classes = (style: Styles, classNames: string[]) => classNames.map(className => style[className]).filter(s => !!s).join(" ")
+export const classes = (style?: Styles, classNames?: string[]) => !!style && !!classNames && classNames.map(className => style[className]).filter(s => !!s).join(" ") || ""
