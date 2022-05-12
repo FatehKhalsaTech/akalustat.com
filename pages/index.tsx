@@ -1,4 +1,7 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
+import { PHASE_PRODUCTION_BUILD } from 'next/constants'
+import { api } from '../app/data/api'
+
 import {Text, PunjabiCaligraphy, Punjabi, Center} from '../app/components/Text'
 import {TextStyle} from '../app/components/Styles'
 import {CHHAND_TITLES} from '../app/constants/chhand-splits'
