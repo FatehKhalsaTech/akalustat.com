@@ -1,9 +1,9 @@
-import {Styles} from '../utils/types'
-import {classes} from '../utils/classes'
+import {Styles} from '../lib/types'
+import {classes} from '../lib/classes'
 import { ReactNode } from 'react'
 
-import UtilStyles from '../../styles/utils.module.css'
-import TextStyles from '../../styles/text.module.css'
+import UtilStyles from '../../styles/lib/utils.module.css'
+import TextStyles from '../../styles/lib/text.module.css'
 
 type StyleProps = {
   style: Styles,

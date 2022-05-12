@@ -1,7 +1,6 @@
 import { ReactNode } from "react"
-import {classes} from '../utils/classes'
-import {Styles, WithChildren} from '../utils/types'
-// import utilStyles from '../../styles/utils.module.css'
+import {classes} from '../lib/classes'
+import {Styles, WithChildren} from '../lib/types'
 import { UtilStyle, TextStyle } from './Styles'
 
 
@@ -31,6 +30,12 @@ export const Punjabi = ({children}: WithChildren) => (
 
 export const PunjabiCaligraphy = ({children}: WithChildren) => (
   <TextStyle classNames={["punjabi_caligraphy"]}>
+    {children}
+  </TextStyle>
+)
+
+export const Center = ({children}: WithChildren) => (
+  <TextStyle classNames={["center_text"]}>
     {children}
   </TextStyle>
 )
