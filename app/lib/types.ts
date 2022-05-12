@@ -7,7 +7,7 @@ export type Styles = {
 
 
 export type WithChildren = {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 
@@ -198,7 +198,7 @@ export type BaniParagraphs = {
 }
 
 export type Chhand = {
-  subheaderNo: number,
+  chhandNo: number,
   paragraphs: Paragraph[],
 }
 

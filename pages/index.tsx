@@ -6,7 +6,24 @@ import {Text, PunjabiCaligraphy, Punjabi, Center} from '../app/components/Text'
 import {TextStyle} from '../app/components/Styles'
 import {CHHAND_TITLES} from '../app/constants/chhand-splits'
 
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { chhands } = await api.get()
+
+  if (process.env.NEXT_PHASE === PHASE_PRODUCTION_BUILD) {
+    await api.cache.set(chhands)
+  }
+
+  return {
+    props: {
+      chhands,
+    },
+  }
+}
+
 import styles from '../styles/pages/Home.module.css'
+import { Chhand } from '../app/lib/types'
+import Link from 'next/link'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -44,13 +61,15 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.chhands}>
         {CHHAND_TITLES.map((title,indx) => (
-          <div className={styles.chhand} key={indx}>
+          <Link key={indx} href={`/viewer/${encodeURI((indx + 1).toString())}`}>
+          <div className={styles.chhand}>
             <Punjabi>
               <Text>
                 {`${indx + 1}) ${title}`}
               </Text>
             </Punjabi>
           </div>
+          </Link>
         ) )}
        
         </div>

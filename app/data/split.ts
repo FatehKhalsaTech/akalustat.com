@@ -27,8 +27,8 @@ export const sortChhands = (data: RemappedBani): BaniChhands => {
     const prevHeaders = subheaders.slice(0, subheaders.length - 1)
     const currentHeader = subheaders[subheaders.length -1]
 
-    if(!subheaders.length) return [{subheaderNo: 1, paragraphs: [ paragraph ] }]
-    if(isIndexed) return [...prevHeaders, currentHeader, {subheaderNo: currentHeader.subheaderNo + 1, paragraphs: [paragraph]}]
+    if(!subheaders.length) return [{chhandNo: 1, paragraphs: [ paragraph ] }]
+    if(isIndexed) return [...prevHeaders, currentHeader, {chhandNo: currentHeader.chhandNo + 1, paragraphs: [paragraph]}]
 
     else return [...prevHeaders, {...currentHeader, paragraphs: [...currentHeader.paragraphs, paragraph] } ]
 
