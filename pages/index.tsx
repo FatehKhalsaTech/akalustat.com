@@ -2,7 +2,7 @@ import type { NextPage, GetStaticProps } from 'next'
 import { PHASE_PRODUCTION_BUILD } from 'next/constants'
 import { api } from '../app/data/api'
 
-import {Text, PunjabiCaligraphy, Punjabi, Center} from '../app/components/Text'
+import {Text, PunjabiCaligraphyTitle, Punjabi, Center} from '../app/components/Text'
 import {TextStyle} from '../app/components/Styles'
 import {CHHAND_TITLES} from '../app/constants/chhand-splits'
 
@@ -30,24 +30,24 @@ const Home: NextPage = () => {
       <div className={styles.main}>
         <div className={styles.headers}>
           <Center>
-            <PunjabiCaligraphy >
+            <PunjabiCaligraphyTitle >
               <Text style={styles} styleClassNames={["superheader"]} >
                 {"gur br Akwl ] dyZ qyZ &qih ] ^wlsy dI hr mYdwn &qih ]"}
               </Text>
               <Text style={styles} styleClassNames={["fateh"]}>
                 {"< sRI vwihgurU jI kI &qih ]"}
               </Text>
-            </PunjabiCaligraphy>
+            </PunjabiCaligraphyTitle>
             <Punjabi>
               <Text style={styles} styleClassNames={["subheader"]}>
                 {"dSmyS ipqw jI dI pwvn bwxI iv`coN"}
               </Text>
             </Punjabi>
-            <PunjabiCaligraphy>
+            <PunjabiCaligraphyTitle>
               <Text style={styles} styleClassNames={["title"]}>
                 {"sRI Akwl ausqq swihb"}
               </Text>
-            </PunjabiCaligraphy>
+            </PunjabiCaligraphyTitle>
           </Center>
         </div>
         <div className="Center">

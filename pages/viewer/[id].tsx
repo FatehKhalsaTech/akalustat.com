@@ -4,6 +4,7 @@ import { PHASE_PRODUCTION_BUILD } from 'next/constants'
 import { api } from "../../app/data/api"
 import { Chhand } from "../../app/lib/types"
 import { Punjabi } from "../../app/components/Text"
+import { LineBlock } from "../../app/components/LineBlock"
 
 export const getStaticPaths: GetStaticPaths<{id: string}> = async () => {
 const { chhands } = await api.get()
@@ -50,7 +51,9 @@ const ViewerPage: NextPage<Props> = ({chhand}: Props) => {
   return (
     <BorderPage>
       <Punjabi>
-      <div>{chhand.paragraphs[0].verses[0].gurmukhi}</div>
+      <div>
+        {chhand.paragraphs.map(para => para.verses.map(v => <LineBlock key={`chhand${chhand.chhandNo}-para${para.paragraphNo}-line${v.verseID}`} line={v}/>))}
+        </div>
 </Punjabi>
     </BorderPage>
   )

@@ -119,9 +119,9 @@ export type Transliteration = {
     ur:      string;
 }
 
-type VishraamKey = "sttm" | "sttm2" | "igurbani"
+export type VishraamKey = "sttm" | "sttm2" | "igurbani"
 export type Visraam = {
-  [key in VishraamKey]: Vishraam;
+  [key in VishraamKey]: Vishraam[];
 }
 
 export type Vishraam = {
@@ -206,3 +206,5 @@ export type BaniChhands = {
   baniInfo: RemappedInfo,
   chhands: Chhand[]
 }
+
+export type LineSections = {type: string, data: string}[]

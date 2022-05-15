@@ -2,8 +2,12 @@
   font-family: "OpenGurbaniAkhar";
 }
 
-.punjabi_caligraphy {
+.punjabi_caligraphy_title {
   font-family: "Raaj";
+}
+
+.punjabi_caligraphy_text {
+  font-family: "Prabhki";
 }
 
 .center_text {
