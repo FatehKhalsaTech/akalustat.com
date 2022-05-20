@@ -1,1 +1,2 @@
-export const error = () => {}
+const error = () => {}
+export default error

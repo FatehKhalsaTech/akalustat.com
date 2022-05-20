@@ -1,1 +1,2 @@
-export const about = () =>{}
+const about = () =>{}
+export default about
