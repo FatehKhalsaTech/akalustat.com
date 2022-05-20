@@ -16,3 +16,7 @@
   border-image: url("/images/border.svg") 95 95 round;
   padding: 3rem;
 }
+
+.children {
+  padding: 3rem
+}

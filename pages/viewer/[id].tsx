@@ -52,7 +52,9 @@ const ViewerPage: NextPage<Props> = ({chhand}: Props) => {
     <BorderPage>
       <Punjabi>
       <div>
-        {chhand.paragraphs.map(para => para.verses.map(v => <LineBlock key={`chhand${chhand.chhandNo}-para${para.paragraphNo}-line${v.verseID}`} line={v}/>))}
+        {chhand.paragraphs.map((para, index) => {
+          // if(index === 1) return 
+          return para.verses.map(v => <LineBlock key={`chhand${chhand.chhandNo}-para${para.paragraphNo}-line${v.verseID}`} line={v}/>)})}
         </div>
 </Punjabi>
     </BorderPage>
