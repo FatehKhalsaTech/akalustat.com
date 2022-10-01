@@ -1,4 +1,4 @@
-export const CHHAND_SPLITS = [0, 6, 19, 30, 41, 62, 83, 104, 136, 156, 177, 198, 218, 229, 250, 263, 274, 289] 
+export const CHHAND_SPLITS = [0, 5, 19, 30, 41, 62, 83, 104, 136, 156, 177, 198, 218, 229, 250, 263, 274, 289] 
 
 export const CHHAND_TITLES = [
  "auqwr Kwsy dsKq kw ] pwiqswhI 10 ]",

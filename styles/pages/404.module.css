@@ -1,0 +1,15 @@
+.img_container {
+  /* flex: 1 */
+}
+
+.text_container {
+  /* flex: 2 */
+}
+
+.image {
+  /* max-height: 50%; */
+}
+
+.text {
+  font-size: 3rem;
+}

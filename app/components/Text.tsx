@@ -29,7 +29,13 @@ export const Punjabi = ({children}: WithChildren) => (
 )
 
 export const PunjabiCaligraphy = ({children}: WithChildren) => (
-  <TextStyle classNames={["punjabi_caligraphy"]}>
+  <TextStyle classNames={["punjabi_caligraphy_text"]}>
+    {children}
+  </TextStyle>
+)
+
+export const PunjabiCaligraphyTitle = ({children}: WithChildren) => (
+  <TextStyle classNames={["punjabi_caligraphy_title"]}>
     {children}
   </TextStyle>
 )
